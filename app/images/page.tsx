@@ -1,13 +1,17 @@
-import Image from 'next/image'
+import Link from "next/link"
 
-export default function Page() {
+import { siteConfig } from "@/config/site"
+import { buttonVariants } from "@/components/ui/button"
+import Image from "next/image";
+
+export default function ImagesPage() {
   const products = [
     {
       id: 1,
       name: "Basic Tee",
-      href: "https://res.cloudinary.com/ddqg1mfyq/image/upload/v1690597894/hyfe3pjsmxqvs7twrdew.jpg",
+      href: "https://res.cloudinary.com/ddqg1mfyq/image/upload/v1690599172/ffkfki49drr15iks5qby.jpg",
       imageSrc:
-        "https://res.cloudinary.com/ddqg1mfyq/image/upload/v1690597894/hyfe3pjsmxqvs7twrdew.jpg",
+        "https://res.cloudinary.com/ddqg1mfyq/image/upload/v1690599172/ffkfki49drr15iks5qby.jpg",
       imageAlt: "Front of men's Basic Tee in black.",
       price: "$35",
       color: "Black",
@@ -79,7 +83,7 @@ export default function Page() {
     },
     // More products...
   ];
-  
+
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex max-w-auto flex-col items-start gap-2">
